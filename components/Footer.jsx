@@ -15,7 +15,7 @@ const Footer = () => {
         <footer className="py-4 bg-primary text-white">
             <div className="container mx-auto flex justify-between items-center">
                 <p>&copy; {new Date().getFullYear()} Anoushka Mergoju. All rights reserved.</p>
-                <Button onClick={handleClick}>Hire me</Button>
+                
             </div>
         </footer>
     );
