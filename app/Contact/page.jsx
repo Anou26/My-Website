@@ -17,7 +17,7 @@ const info = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "snkhalan@g.syr.edu",
+    description: "amergoju@syr.edu",
   },
 ];
 
@@ -82,9 +82,9 @@ const Contact = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
       }}
-      className="h-screen flex items-center justify-center py-6"
+      className="py-6"
     >
-      <div className="container mx-auto flex items-center justify-center">
+      <div className="container mx-auto">
         {alert.show && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <Alert variant={alert.type} className="max-w-md w-full bg-[#27272c] rounded-lg p-4 shadow-lg">
@@ -93,7 +93,7 @@ const Contact = () => {
             </Alert>
           </div>
         )}
-        <div className="flex flex-col xl:flex-row gap-[30px] justify-center items-center">
+        <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form
@@ -150,6 +150,19 @@ const Contact = () => {
             </form>
           </div>
           {/* info */}
+          <div className="xl:w-[46%]">
+            <div className="flex flex-col gap-8 p-10 bg-[#27272c] rounded-xl">
+              {info.map((item, index) => (
+                <div key={index} className="flex items-center gap-4">
+                  <div className="text-accent text-2xl">{item.icon}</div>
+                  <div>
+                    <h4 className="text-xl font-semibold">{item.title}</h4>
+                    <p className="text-white/60">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </motion.section>
