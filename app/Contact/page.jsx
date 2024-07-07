@@ -6,20 +6,6 @@ import { Textarea } from "@/components/ui/textarea";
 import emailjs from 'emailjs-com';
 import { motion } from "framer-motion";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-
-const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+1) 914 704 0448",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "amergoju@syr.edu",
-  },
-];
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -37,7 +23,7 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    console.log(Updated ${name} to ${value});
+    console.log(`Updated ${name} to ${value}`);
   };
 
   // Handle form submission
@@ -102,7 +88,7 @@ const Contact = () => {
             >
               <h3 className="text-4xl text-accent">Let's Work Together!</h3>
               <p className="text-white/60 text-justify">
-                Please enter your details and submit your query, and I will respond at the earliest opportunity. Alternatively, you can reach me directly via phone or email.
+                Please enter your details and submit your query, and I will respond at the earliest opportunity.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -150,9 +136,10 @@ const Contact = () => {
             </form>
           </div>
           {/* info */}
-          
         </div>
       </div>
     </motion.section>
   );
 };
+
+export default Contact;
