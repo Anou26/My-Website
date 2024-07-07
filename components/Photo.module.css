@@ -1,0 +1,45 @@
+.glow {
+  box-shadow: 
+    0 0 15px rgba(50, 246, 208, 0.5), 
+    0 0 30px rgba(50, 246, 208, 0.5), 
+    0 0 45px rgba(50, 246, 208, 0.5),
+    0 0 60px rgba(50, 246, 208, 0.5),
+    0 0 75px rgba(50, 246, 208, 0.5); /* Slightly reduced glow with multiple layers */
+  transition: box-shadow 0.1s ease; /* Smooth transition on hover */
+  border-radius: 50%; /* Ensure the glow follows the circular shape */
+}
+
+.hover-glow:hover .glow {
+  box-shadow: 
+    0 0 30px rgba(50, 246, 208, 0.7), 
+    0 0 45px rgba(50, 246, 208, 0.7), 
+    0 0 60px rgba(50, 246, 208, 0.7),
+    0 0 75px rgba(50, 246, 208, 0.7),
+    0 0 90px rgba(50, 246, 208, 0.7); /* Reduced stronger glow on hover */
+}
+
+.center-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 400px; /* Ensure the container size matches the image size */
+  height: 400px; /* Ensure the container size matches the image size */
+}
+
+@keyframes blink {
+  0% {
+    box-shadow: 
+      0 0 30px 20px rgba(50, 246, 208, 0.7), 
+      0 0 45px 20px rgba(50, 246, 208, 0.7), 
+      0 0 60px 20px rgba(50, 246, 208, 0.7),
+      0 0 75px 20px rgba(50, 246, 208, 0.7);
+  }
+  100% {
+    box-shadow: 
+      0 0 40px 30px rgba(50, 246, 208, 0), 
+      0 0 55px 30px rgba(50, 246, 208, 0), 
+      0 0 70px 30px rgba(50, 246, 208, 0),
+      0 0 85px 30px rgba(50, 246, 208, 0);
+  }
+}
