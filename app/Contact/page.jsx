@@ -37,7 +37,7 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    console.log(`Updated ${name} to ${value}`);
+    console.log(Updated ${name} to ${value});
   };
 
   // Handle form submission
@@ -150,23 +150,9 @@ const Contact = () => {
             </form>
           </div>
           {/* info */}
-          <div className="xl:w-[46%]">
-            <div className="flex flex-col gap-8 p-10 bg-[#27272c] rounded-xl">
-              {info.map((item, index) => (
-                <div key={index} className="flex items-center gap-4">
-                  <div className="text-accent text-2xl">{item.icon}</div>
-                  <div>
-                    <h4 className="text-xl font-semibold">{item.title}</h4>
-                    <p className="text-white/60">{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          
         </div>
       </div>
     </motion.section>
   );
 };
-
-export default Contact;
