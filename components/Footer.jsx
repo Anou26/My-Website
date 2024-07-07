@@ -7,7 +7,7 @@ const Footer = () => {
     const router = useRouter();
 
     const handleClick = () => {
-        window.open('https://www.linkedin.com/in/cusenaz/', '_blank');
+        window.open('https://www.linkedin.com/in/anoushkamergoju/', '_blank');
         router.push('/Contact');
     };
 
