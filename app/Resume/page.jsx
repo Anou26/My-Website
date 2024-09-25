@@ -74,7 +74,12 @@ const experience = {
     items: [
       {
         company: "Syracuse University",
-        position: "Operations Research Data Analyst",
+        position: "Machine Learning Researcher",
+        duration: "June 2024 - Present",
+      },
+      {
+        company: "Syracuse University",
+        position: "Operations Research Analyst",
         duration: "May 2023 - Dec 2023",
       },
       {
@@ -83,14 +88,24 @@ const experience = {
         duration: "May 2022 - Aug 2022",
       },
       {
-        company: "Chegg",
+        company: "Chegg India",
         position: "Freelance Managed Network Expert",
-        duration: "Mar 2022 - May 2022",
+        duration: "Apr 2022 - June 2022",
       },
       {
         company: "GAOTek Inc.",
-        position: "Data Analyst Intern",
+        position: "Software Developer Intern",
         duration: "Oct 2021 - Jan 2022",
+      },
+      {
+        company: "TakenMind Technologies",
+        position: "Data Analysis and Finance Intern",
+        duration: "Apr 2021 - June 2021",
+      },
+      {
+        company: "Verzeo",
+        position: "Machine Learning Project Intern",
+        duration: "Apr 2021 - June 2021",
       },
       {
         company: "CodeSpeedy Technology Pvt Ltd",
@@ -98,9 +113,19 @@ const experience = {
         duration: "Mar 2021 - June 2021",
       },
       {
+        company: "The Sparks Foundation",
+        position: "Data Science and Business Analytics Intern",
+        duration: "Aug 2020 - September 2020",
+      },
+      {
         company: "Aadox",
         position: "Web Development Intern",
         duration: "June 2020 - July 2020",
+      },
+      {
+        company: "GITAM Deemed University",
+        position: "Undergraduate Student ML Researcher",
+        duration: "May 2020 - June 2020",
       },
       
     ],

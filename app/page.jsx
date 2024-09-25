@@ -62,7 +62,7 @@ const Home = () => {
                 <Button
                   size="md"
                   className="flex items-center gap-2 bg-accent text-primary"
-                  onClick={() => window.open('/Resume - Anoushka.pdf', '_blank')}
+                  onClick={() => window.open('/Anoushka_Resume(2).pdf', '_blank')}
                 >
                   <FiDownload />
                   Resume
