@@ -9,11 +9,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+1) 914 704 0448",
-  },
+  
   {
     icon: <FaEnvelope />,
     title: "Email",
