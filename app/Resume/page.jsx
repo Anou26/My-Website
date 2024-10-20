@@ -640,6 +640,7 @@ const Resume = () => {
   </TabsContent>
 
   {/* Testimonials */}
+{/* Testimonials */}
 <TabsContent value="testimonials" className="w-full">
   <div className="flex flex-col gap-[30px] text-center xl:text-left">
     <h3 className="text-4xl font-bold">{testimonials.title}</h3>
@@ -647,22 +648,29 @@ const Resume = () => {
       {testimonials.description}
     </p>
 
-    <ScrollArea className="h-[400px]">
-      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-        {testimonials.items.map((item, index) => {
-          return (
-            <li key={index}
-              className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+      {testimonials.items.map((item, index) => {
+        return (
+          <div key={index} 
+            className="bg-[#232329] h-[250px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+            style={{ overflow: 'hidden' }}>
+            
+            {/* Scrollable Text */}
+            <div className="h-[150px] overflow-y-auto">
+              <p className="text-white/60">{item.testimonial}</p>
+            </div>
+            
+            <div className="flex flex-col lg:flex-row gap-3">
               <span className="text-accent">{item.name}</span>
               <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
-              <p className="text-white/60 text-center lg:text-left">{item.testimonial}</p>
-            </li>
-          );
-        })}
-      </ul>
-    </ScrollArea>
+            </div>
+          </div>
+        );
+      })}
+    </div>
   </div>
 </TabsContent>
+
 
 
         </div>
