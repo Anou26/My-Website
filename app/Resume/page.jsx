@@ -399,6 +399,31 @@ const certificates = {
   ],
 }
 
+// testimonials data
+const testimonials = {
+  title: "Testimonials",
+  description: "Here's what people have to say about my work:",
+  items: [
+    {
+      name: "Lata Choudhary",
+      relation: "Manager at InfyBytes AI Labs Pvt Ltd (thehomeworkapp.ai)",
+      testimonial: "I had the pleasure of managing Anoushka during her internship and was consistently impressed with her expertise in data-driven recruitment, retention strategies, data analysis, automated data scraping, and skills. Anoushka excelled in handling complex data, providing valuable insights, and demonstrating exceptional analytical skills. Her attention to detail, communication skills, and collaborative approach made her an invaluable team member. Her systematic methods ensured timely updates and effective use of critical information. Anoushka's quick learning, enthusiasm, and strong presentation abilities further contributed to her outstanding performance. I highly recommend her for any role in these areas.",
+    },
+    {
+      name: "Saruque Ahamed Mollick",
+      position: "Managing Director at CodeSpeedy Technology Private Limited",
+      testimonial: "I personally managed this intern and I must say she has the potential and she is a good fit for IT Organisations. I highly recommend this candidate.",
+    },
+    {
+      name: "Ankur Kakkar",
+      position: "CEO at AADOX",
+      testimonial: "I have known her to be very hardworking concerning any kind of work she has been assigned. She does every work with full commitment and has something new to offer from her side in every project. Based on our experience, I higly recommend her for any organization.",
+    },
+    // Add more testimonials as necessary
+  ],
+};
+
+
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -431,6 +456,7 @@ const Resume = () => {
         <TabsTrigger value="experience" style={{ paddingLeft: '5%' }}>Experience</TabsTrigger> 
         <TabsTrigger value="project" style={{ paddingRight: '6%' }}>Projects</TabsTrigger>
         <TabsTrigger value="certificates" style={{ paddingLeft: '10%' }}>Certificates</TabsTrigger>
+        <TabsTrigger value="testimonials" style={{ paddingRight: '10%' }}>Testimonials</TabsTrigger>
       </TabsList>
 
       {/* content */}
@@ -612,6 +638,31 @@ const Resume = () => {
       </ScrollArea>
     </div>
   </TabsContent>
+
+  {/* Testimonials */}
+<TabsContent value="testimonials" className="w-full">
+  <div className="flex flex-col gap-[30px] text-center xl:text-left">
+    <h3 className="text-4xl font-bold">{testimonials.title}</h3>
+    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+      {testimonials.description}
+    </p>
+
+    <ScrollArea className="h-[400px]">
+      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+        {testimonials.items.map((item, index) => {
+          return (
+            <li key={index}
+              className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+              <span className="text-accent">{item.name}</span>
+              <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+              <p className="text-white/60 text-center lg:text-left">{item.testimonial}</p>
+            </li>
+          );
+        })}
+      </ul>
+    </ScrollArea>
+  </div>
+</TabsContent>
 
 
         </div>
