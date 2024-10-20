@@ -48,7 +48,7 @@ const about = {
         },
         {
          fieldName: "Experience",
-         fieldValue: "1.5 Years"
+         fieldValue: "2 Years"
         },
         {
          fieldName: "Nationality",
@@ -60,7 +60,7 @@ const about = {
         },
         {
          fieldName: "Languages Known",
-         fieldValue: "English, Hindi, Telugu"  
+         fieldValue: "English, Hindi, Telugu, French"  
         }
     ]   
 };
