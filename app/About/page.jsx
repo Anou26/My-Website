@@ -417,7 +417,7 @@ const testimonials = {
     {
       name: "Ankur Kakkar",
       position: "CEO at AADOX",
-      testimonial: "I have known her to be very hardworking concerning any kind of work she has been assigned. She does every work with full commitment and has something new to offer from her side in every project. Based on our experience, I higly recommend her for any organization.",
+      testimonial: "I am writing this letter to recommend Anoushka Mergoju, who has been a part of our web development team as an intern. During her internship, she built high-quality, responsive websites using HTML, CSS, JavaScript and Wordpress, ensuring seamless performance across devices. Her work stood out for its attention to detail, with optimized SEO strategies and effective use of Google Analytics to drive data-driven improvements. This resulted in improved site traffic, user engagement, and overall functionality, reflecting her strong technical and analytical skills. I have known her to be very hardworking concerning any kind of work she has been assigned. She does every work with full commitment and has something new to offer from her side in every project. Based on our experience, I higly recommend her for any organization.",
     },
     // Add more testimonials as necessary
   ],
