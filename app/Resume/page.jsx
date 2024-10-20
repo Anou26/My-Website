@@ -639,7 +639,6 @@ const Resume = () => {
     </div>
   </TabsContent>
 
-  {/* Testimonials */}
 {/* Testimonials */}
 <TabsContent value="testimonials" className="w-full">
   <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -652,25 +651,27 @@ const Resume = () => {
       {testimonials.items.map((item, index) => {
         return (
           <div key={index} 
-            className="bg-[#232329] h-[250px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+            className="bg-[#232329] h-[250px] py-6 px-10 rounded-xl flex flex-col justify-center items-start gap-2"
             style={{ overflow: 'hidden' }}>
             
             {/* Scrollable Text */}
             <div className="h-[150px] overflow-y-auto">
-              <p className="text-white/60">{item.testimonial}</p>
+              <p className="text-white/60 text-lg italic">"{item.testimonial}"</p>
             </div>
             
-            <div className="flex flex-col lg:flex-row gap-3">
-              <span className="text-accent">{item.name}</span>
-              <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
-            </div>
+            {/* Person Name */}
+            <span className="text-accent font-semibold text-lg">{item.name}</span>
+            
+            {/* Position and Company */}
+            <h3 className="text-sm max-w-[260px] text-white/40">
+              {item.position}
+            </h3>
           </div>
         );
       })}
     </div>
   </div>
 </TabsContent>
-
 
 
         </div>
