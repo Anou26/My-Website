@@ -406,7 +406,7 @@ const testimonials = {
   items: [
     {
       name: "Lata Choudhary",
-      relation: "Manager at InfyBytes AI Labs Pvt Ltd (thehomeworkapp.ai)",
+      position: "Manager at InfyBytes AI Labs Pvt Ltd (thehomeworkapp.ai)",
       testimonial: "I had the pleasure of managing Anoushka during her internship and was consistently impressed with her expertise in data-driven recruitment, retention strategies, data analysis, automated data scraping, and skills. Anoushka excelled in handling complex data, providing valuable insights, and demonstrating exceptional analytical skills. Her attention to detail, communication skills, and collaborative approach made her an invaluable team member. Her systematic methods ensured timely updates and effective use of critical information. Anoushka's quick learning, enthusiasm, and strong presentation abilities further contributed to her outstanding performance. I highly recommend her for any role in these areas.",
     },
     {
@@ -656,14 +656,14 @@ const Resume = () => {
             
             {/* Scrollable Text */}
             <div className="h-[150px] overflow-y-auto">
-              <p className="text-white/60 text-lg italic">"{item.testimonial}"</p>
+              <p className="text-white/60 text-sm italic">"{item.testimonial}"</p>
             </div>
             
             {/* Person Name */}
-            <span className="text-accent font-semibold text-lg">{item.name}</span>
+            <span className="text-accent font-semibold text-base">{item.name}</span>
             
             {/* Position and Company */}
-            <h3 className="text-sm max-w-[260px] text-white/40">
+            <h3 className="text-xs max-w-[260px] text-white/40">
               {item.position}
             </h3>
           </div>
