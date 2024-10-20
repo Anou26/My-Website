@@ -456,7 +456,7 @@ const Resume = () => {
         <TabsTrigger value="experience" style={{ paddingLeft: '5%' }}>Experience</TabsTrigger> 
         <TabsTrigger value="project" style={{ paddingRight: '6%' }}>Projects</TabsTrigger>
         <TabsTrigger value="certificates" style={{ paddingLeft: '10%' }}>Certificates</TabsTrigger>
-        <TabsTrigger value="testimonials" style={{ paddingRight: '10%' }}>Testimonials</TabsTrigger>
+        <TabsTrigger value="testimonials" style={{ paddingLeft: '10%' }}>Testimonials</TabsTrigger>
       </TabsList>
 
       {/* content */}
