@@ -6,7 +6,7 @@ import { SiLeetcode } from "react-icons/si";
 
 const socials = [
   { icon: <FaGithub />, path: "https://github.com/Anou26" },
-  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/anoushkamergoju/" },
+  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/anoumergoju/" },
   { icon: <SiLeetcode />, path:"https://leetcode.com/u/AnouMer/"},
   { icon: <FaMedium />, path: "https://medium.com/@anoushkamergoju" },
 ];
