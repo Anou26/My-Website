@@ -18,7 +18,7 @@ Ensure you have the following installed:
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/Nazorange/NazWebsite.git
+git clone https://github.com/Anou26/My-Website
 cd your-repo-name
 npm install
 ```
