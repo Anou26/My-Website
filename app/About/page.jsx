@@ -74,13 +74,13 @@ const experience = {
     items: [
       {
         company: "Syracuse University",
-        position: "Machine Learning Researcher",
+        position: "Researcher Intern",
         duration: "June 2024 - Present",
       },
       {
         company: "Syracuse University",
-        position: "Operations Research Analyst",
-        duration: "May 2023 - Dec 2023",
+        position: "Research Assistant",
+        duration: "May 2023 - May 2024",
       },
       {
         company: "InfyBytes AI Labs Pvt Ltd",
@@ -93,9 +93,9 @@ const experience = {
         duration: "Apr 2022 - June 2022",
       },
       {
-        company: "GAOTek Inc.",
-        position: "Software Developer Intern",
-        duration: "Oct 2021 - Jan 2022",
+        company: "Vimta Labs Limited",
+        position: "Project Intern",
+        duration: "Jul 2021 - Dec 2021",
       },
       {
         company: "TakenMind Technologies",
